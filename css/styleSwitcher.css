@@ -9,6 +9,17 @@
     padding:15px;
     border: 1px solid #d4d4e3;
     border-right: none;
+    border-radius: 0 0 0 5px;
+    /*-webkit-transform: translate(100%);
+    transform: translate(100%);*/
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.style-switcher.open{
+    -webkit-transform: translate(0%);
+    transform: translate(0%);
+
 }
 
 .style-switcher h5{
@@ -23,6 +34,8 @@
 .style-switcher ul{
     margin:0;
     padding:0;
+    display: block;
+    margin-bottom: 5px;
     list-style: none;
 }
 
@@ -34,8 +47,28 @@
     height: 30px;
     width: 30px;
     display: block;
-    border-radius: 50%;
+    border-radius:50%;
     cursor: pointer;
     text-decoration: none;
-    margin-right: 2px;
+    margin-right:2px;
 }
+
+.style-switcher .toggle-style-Switcher{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background: #ffffff;
+    left:-46px;
+    top:-1px;
+    border: 1px solid #d4d4e3;
+    border-right: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+
+.style-switcher .toggle-style-Switcher .fa{ 
+    font-size: 20px;
+    line-height: 43px;
+}
+
